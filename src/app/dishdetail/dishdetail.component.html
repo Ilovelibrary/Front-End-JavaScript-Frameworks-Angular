@@ -12,7 +12,7 @@
     <h2>Error</h2>
     <h4>{{errMess}}</h4>
   </div>
-  <div fxFlex="40" *ngIf="dish" 
+  <div fxFlex="40" *ngIf="dish" [@visibility]="visibility"
       fxLayout="column"
       fxLayoutAlign="center">
     <md-card>
@@ -37,7 +37,7 @@
     </md-card>
   </div>
 
-  <div fxFlex="40" *ngIf="dish"
+  <div fxFlex="40" *ngIf="dish" [@visibility]="visibility"
     class="container"
     fxLayout="column"
     fxLayoutAlign.gt-md="space-around center"
